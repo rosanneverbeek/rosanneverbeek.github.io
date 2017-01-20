@@ -1,0 +1,99 @@
+* {
+    box-sizing:border-box;
+}
+
+section{
+    padding-top: 0.1em;
+        width: 100%;
+    height: inherit;
+
+}
+
+section > ul:first-of-type > li {
+    min-width:100%;
+}
+
+section > ul:first-of-type > li:not(last-child) {
+    padding-right:rem;
+}
+
+section > ul:first-of-type > li:first-child {
+    padding-left:rem;
+}
+
+section > ul:first-of-type > li:last-child {
+    padding-right:0rem;
+}
+
+section .cmda-bolletjes li {
+    background-color:#ffc917;
+}
+
+section .cmda-bolletjes li.active {
+    background-color:rgb(153,153,153);;
+}
+
+section > ul,
+section > ul > li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+section > ul:first-of-type {
+    display:flex;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    -ms-overflow-style:none;
+    -webkit-overflow-scrolling:touch;
+}
+
+section > ul:first-of-type::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+section > ul:first-of-type > li {
+    box-sizing:content-box;
+}
+
+section .cmda-bolletjes {
+    display:flex;
+    justify-content:center;
+}
+
+section .cmda-bolletjes li {
+    margin:0 .25rem;
+    width:.5rem;
+    height:.5rem;
+    border-radius:50%;
+}
+
+section a {
+    position:relative;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+
+
+* Breakpoints */
+@media all and (min-width: 40em) {
+
+    body {
+        font-size:1.25em;
+        font-family: "open sans";
+        margin: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+
+    }
+    main article {
+        width: calc(50% - 3em);
+
+    }
+}
+

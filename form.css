@@ -1,0 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+
+body {
+
+}
+form {
+  margin-left: 30%;
+  margin-right: 10%;
+  display: inline-block;
+  position: relative;
+  height: 2em;
+  float: right;
+  padding: 1em;
+    margin: 2em;
+  position: relative;
+}
+
+input[type="text"] {
+     background: none;
+    border: none;
+    color: #BBB;
+    display: inline-block;
+    flex-flow: row;
+    font-family: "helvetica";
+    font-size: 5vmin;
+    font-weight: 100;
+    height: 60px;
+    outline: none;
+    padding-right: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: width .30s;
+    width: 1px;
+    z-index: 3;
+
+}
+
+input[type="text"]:focus:hover {
+  border-bottom: 1px solid #ffc917;
+}
+
+input[type="text"]:focus {
+  width: 16em;
+  z-index: 1;
+  border-bottom: 1px solid #ffc917;
+  cursor: text;
+}
+input[type="submit"] {
+  height: 57px;
+  width: 57px;
+  display: inline-block;
+  color: #ffc917;
+  float: right;
+  background-image: url(zoek.png);
+    background-repeat: no-repeat;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  cursor: pointer;
+  transition: opacity .4s ease;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+    color: #ffc917;
+}
+@media all and (min-width: 30em) {
+
+
+form {
+  margin-left: 80%;
+  margin-right: 10%;
+}
+
+  input[type="text"]:focus {
+  width: 17em;
+  z-index: 1;
+  border-bottom: 1px solid #ffc917;
+  cursor: text;
+}
+}
+/* Breakpoints */
+@media all and (min-width: 40em) {
+
+
+form {
+  margin-left: 90%;
+  margin-right: 10%;
+}
+
+  input[type="text"]:focus {
+  width: 20em;
+  z-index: 1;
+  border-bottom: 1px solid #ffc917;
+  cursor: text;
+}
+}
+@media all and (min-width: 50em) {
+
+  input[type="text"]:focus {
+  width: 21em;
+  z-index: 1;
+  border-bottom: 1px solid #ffc917;
+  cursor: text;
+}
+}
+@media all and (min-width: 60em) {
+
+  input[type="text"]:focus {
+  width: 26em;
+  z-index: 1;
+  border-bottom: 1px solid #ffc917;
+  cursor: text;
+}
+}
+@media all and (min-width: 70em) {
+
+form {
+  margin-left: 90%;
+  margin-right: 10%;
+}
+
+  input[type="text"]:focus {
+  width: 32em;
+  z-index: 1;
+  border-bottom: 1px solid #ffc917;
+  cursor: text;
+}
+}
+
+}
